@@ -1,0 +1,130 @@
+/*
+  Common CSS styles for the naviagation bar across all HTML pages.
+*/
+nav {
+  height: 50px;
+  background-color: mediumseagreen;
+}
+
+nav::after {
+  display: flex;
+  clear: both;
+  content: "";
+}
+
+nav h1, nav li a {
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 300;
+}
+
+nav a i {
+  float: left;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  margin-left: 25px;
+  padding: 15px 0;
+  transition: color 0.8s;
+  transition-timing-function: ease-in-out;
+}
+
+nav a i:hover {
+  color: bisque;
+}
+
+nav h1 a {
+  transition: color 0.8s;
+  transition-timing-function: ease-in-out;
+  float: left;
+  padding: 10px 0;
+  margin-left: 12px;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 22px;
+  color: white;
+}
+
+nav h1 a:hover {
+  color: bisque;
+}
+
+nav ul {
+  float: right;
+  padding-right: 20px;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  padding: 15px 15px;
+  transition: background-color 0.8s;
+  transition-timing-function: ease-in-out;
+}
+
+nav li:hover {
+  cursor: pointer;
+  background-color: lightcoral;
+}
+
+nav a {
+  text-shadow: 2px 2px 4px #000000;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.slicknav_menu {
+  display: none;
+}
+
+/* Media queries */
+@media only screen and (max-width: 769px) {
+  nav ul {
+    display: none;
+  }
+
+  nav a i {
+    margin-left: 5px;
+  }
+
+  .slicknav_menu {
+    display: block;
+    width: 120px;
+    height: 50px;
+    background: transparent;
+    float: right;
+    clear: both;
+  }
+
+  .slicknav_menutxt {
+    height: 15px;
+  }
+
+  .slicknav_menu li {
+    background-color: #333;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .slicknav_menu a:hover {
+    background: transparent;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 464px) {
+  nav a i {
+    margin-top: 3px;
+    margin-left: 5px;
+  }
+
+  nav h1 a {
+    font-size: 15px;
+    padding: 15px 0;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  nav h1 a {
+    font-size: 11px;
+    margin-top: 5px;
+  }
+}

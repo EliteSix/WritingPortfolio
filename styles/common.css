@@ -1,0 +1,66 @@
+/*
+  Common CSS Styles across all HTML pages.
+*/
+
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Readex+Pro:wght@300&family=Roboto:wght@300&family=Ubuntu&display=swap');
+
+/* Reset Selector */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Common font styles */
+.font-ubuntu {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
+
+.font-readex-pro {
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 300;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+/* Common  Title Card styles */
+.titleCard {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 40vh;
+}
+
+.titleCard h1 {
+  position: absolute;
+  top: 30%;
+  left: 7%;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 100px;
+}
+
+@media only screen and (max-width: 767px) {
+  .titleCard {
+    background-size: 100% 80%;
+  }
+  .titleCard h1 {
+    top: 25%;
+    left: 10%;
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 464px) {
+  .titleCard h1 {
+    font-size: 35px;
+  }
+}

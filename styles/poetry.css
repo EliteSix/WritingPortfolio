@@ -1,0 +1,76 @@
+/*
+  CSS styles for the short poetry page.
+*/
+
+/* Page styles */
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  background-color: azure;
+}
+
+/* Title card styles */
+
+.titleImage {
+  background-image: url("../images/commonwrite.jpg");
+}
+
+/* Main styles */
+
+main div {
+  display: flex;
+}
+
+main div #column-1 {
+  width: 15%;
+  height: 56.2vh;
+  border-right: 1px solid black;
+}
+
+main div #column-2 {
+  width: 85%;
+  height: 56.2vh;
+}
+
+main #column-2 div {
+  display: none;
+}
+
+main #column-2 h1 {
+  border-bottom: 2px solid black;
+  margin: 10px 0 0 10px;
+  padding-bottom: 7px;
+  width: 30%;
+}
+
+main #column-2 p {
+  margin: 10px 0 0 10px;
+}
+
+main ul {
+  list-style-type: none;
+  width: 100%;
+}
+
+main ul li {
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid solid;
+  border-bottom: 1px solid black;
+  font-style: italic;
+}
+
+main ul li a {
+  text-decoration: none;
+}
+
+main ul li:nth-child(1) {
+  border-top: none;
+}
+
+main ul li:nth-last-of-type(odd) {
+  background-color: greenyellow;
+}

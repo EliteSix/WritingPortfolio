@@ -1,0 +1,121 @@
+/*
+  CSS styles for the History page.
+*/
+
+/* Page styles */
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  background-color: snow;
+}
+
+/* Title Card styles */
+
+.titleImage {
+  background-image: url("../images/history.jpg");
+}
+
+/* Main styles */
+
+main div {
+  width: 40%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+main div h1 {
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+  color: darkslategray;
+}
+
+main div p {
+  margin-top: 20px;
+}
+
+/* Table styles */
+
+table {
+  margin: 0 auto;
+  margin-top: 10px;
+  border-collapse: collapse;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  box-shadow: 3px 3px 3px silver;
+  min-width: 400px;
+}
+
+table caption {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+table thead {
+  font-family: "Outfit", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px black;
+  text-align: left;
+  color: white;
+  background-color: darkcyan;
+}
+
+table thead th {
+  padding: 12px 15px;
+  margin: 50px;
+}
+
+table thead th:nth-child(1) {
+  border-top-left-radius: 10px;
+  border-right: 2px groove white;
+}
+
+table thead th:nth-child(2) {
+  border-right: 2px groove white;
+  border-top-right-radius: 10px;
+  border-left: 2px groove white;
+}
+
+table tbody {
+  background-color: ivory;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: honeydew;
+}
+
+table tbody td:nth-child(2), table tbody td:nth-child(4) {
+  text-align: center;
+}
+
+table tbody tr {
+  border-bottom: 1px solid grey;
+}
+
+table tbody td {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 12px 15px;
+  margin: 50px;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 769px) {
+  main div {
+    padding-top: 0;
+    width: 80%;
+  }
+  main div h1 {
+    font-size: 24px;
+  }
+  main div p {
+    font-size: 14px;
+  }
+}
